@@ -92,27 +92,28 @@ body{
   margin-bottom:var(--space-2);
 }
 
-.ticket{
-  position:relative;
-  width:100%;
-  aspect-ratio:335/150;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  cursor:pointer;
-  border:none;
-  padding:0;
-  display:block;
-  box-shadow:0 10px 30px rgba(0,0,0,0.12);
-  transition:transform .15s ease;
+.ticket {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 335 / 150;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transition: transform .15s ease;
 }
 .ticket:active{ transform:scale(0.98); }
 
-.ticket-art{
-  position:absolute;
-  inset:0;
-  background-image:url(img/Ticket1.png);
-  background-size:cover;
-  background-position:center;
+.ticket-art {
+  position: absolute;
+  inset: 0;
+  background-image: url(img/Ticket1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .ticket-info{
@@ -120,8 +121,7 @@ body{
   top:0;
   right:0;
   bottom:0;
-  width:34%;
-  background:var(--color-card-bg);
+  display:none;
   padding:var(--space-2);
   display:flex;
   flex-direction:column;
@@ -164,7 +164,7 @@ body{
 
 .detail-row{
   display:flex;
-  align-items:flex-start;
+  align-items:center;
   gap:var(--space-2);
 }
 .detail-row .icon{
@@ -273,7 +273,6 @@ body{
     margin: 0 auto 30px;
   }
 
-  /* Ticket más grande en PC */
   .ticket {
     width: 100%;
   }
@@ -347,4 +346,28 @@ body{
   .code-block .value {
     font-size: 21px;
   }
+}
+@media (min-width: 769px) {
+
+  .details {
+    align-items: center;
+  }
+
+  .detail-row {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .divider {
+    width: 420px;
+  }
+
+  .valid-pill {
+    width: 420px;
+  }
+
+  .code-block {
+    width: 420px;
+  }
+
 }
