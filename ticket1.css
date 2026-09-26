@@ -1,0 +1,231 @@
+:root{
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-ink:        #16181a;   
+  --color-ink-soft:    #6b6f73;   
+  --color-line:        #dcdcdc;   
+  --color-bg:          #f4f4f2;   
+  --color-card-bg:      #ffffff;   
+  --color-valid-bg:      #dff3d8;  
+  --color-valid-ink:      #2e6b23;
+
+  --radius-lg: 22px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+
+  --space-1: 6px;
+  --space-2: 12px;
+  --space-3: 20px;
+  --space-4: 32px;
+  --space-5: 48px;
+
+  --max-width: 420px; 
+}
+
+*{ box-sizing:border-box; }
+
+html,body{
+  margin:0;
+  padding:0;
+  background:var(--color-bg);
+  color:var(--color-ink);
+  font-family:var(--font-display);
+  -webkit-font-smoothing:antialiased;
+}
+
+body{
+  min-height:100svh;
+  display:flex;
+  justify-content:center;
+  background-image:url(img/Fondo\ 1.png);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.screen{
+  width:100%;
+  max-width:var(--max-width);
+  min-height:100svh;
+  padding:
+    calc(env(safe-area-inset-top, 0px) + var(--space-3))
+    var(--space-3)
+    calc(env(safe-area-inset-bottom, 0px) + var(--space-5));
+  display:flex;
+  flex-direction:column;
+}
+.topbar{
+  display:flex;
+  align-items:center;
+  margin-bottom:var(--space-4);
+}
+.topbar button{
+  background:none;
+  border:none;
+  padding:8px;
+  margin-left:-8px;
+  display:flex;
+  color:var(--color-ink);
+}
+.topbar svg{ width:22px; height:22px; }
+
+.title-block{
+  text-align:center;
+  margin-bottom:var(--space-4);
+}
+.title-block h1{
+  margin:0;
+  font-size:clamp(30px, 8vw, 38px);
+  font-weight:700;
+  letter-spacing:0.2px;
+  line-height:1.05;
+}
+.title-block .year{
+  margin-top:2px;
+  font-size:clamp(20px, 5.5vw, 26px);
+  font-weight:500;
+  color:var(--color-ink-soft);
+}
+.ticket-wrap{
+  margin-bottom:var(--space-2);
+}
+
+.ticket{
+  position:relative;
+  width:100%;
+  aspect-ratio:335/150;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  cursor:pointer;
+  border:none;
+  padding:0;
+  display:block;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  transition:transform .15s ease;
+}
+.ticket:active{ transform:scale(0.98); }
+
+.ticket-art{
+  position:absolute;
+  inset:0;
+  background-image:url(img/Ticket1.png);
+  background-size:cover;
+  background-position:center;
+}
+
+.ticket-info{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:34%;
+  background:var(--color-card-bg);
+  padding:var(--space-2);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.ticket-info .event-name{
+  font-size:14px;
+  font-weight:700;
+  line-height:1.15;
+}
+.ticket-info .event-meta{
+  font-size:11px;
+  color:var(--color-ink-soft);
+  line-height:1.4;
+}
+
+.ticket-hint{
+  text-align:center;
+  font-size:12.5px;
+  color:var(--color-ink-soft);
+  margin:var(--space-2) 0 var(--space-4);
+}
+
+.section-heading{
+  text-align:center;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin:0 0 var(--space-4);
+}
+
+.details{
+  background:var(--color-card-bg);
+  border-radius:var(--radius-md);
+  padding:var(--space-3);
+  display:flex;
+  flex-direction:column;
+  gap:var(--space-3);
+}
+
+.detail-row{
+  display:flex;
+  align-items:flex-start;
+  gap:var(--space-2);
+}
+.detail-row .icon{
+  flex:0 0 auto;
+  width:20px;
+  height:20px;
+  margin-top:2px;
+  color:var(--color-ink);
+}
+.detail-row .label{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.2px;
+  color:var(--color-ink-soft);
+  margin:0 0 2px;
+}
+.detail-row .value{
+  font-size:16px;
+  font-weight:600;
+  line-height:1.3;
+  margin:0;
+}
+
+.divider{
+  border:none;
+  border-top:1px dashed var(--color-line);
+  margin:var(--space-1) 0;
+}
+.valid-pill{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background:var(--color-valid-bg);
+  color:var(--color-valid-ink);
+  font-weight:700;
+  font-size:15px;
+  padding:14px;
+  border-radius:999px;
+}
+.valid-pill svg{ width:18px; height:18px; }
+
+.code-block{
+  text-align:center;
+  margin-top:var(--space-3);
+}
+.code-block .label{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  color:var(--color-ink-soft);
+  margin:0 0 4px;
+}
+.code-block .value{
+  font-family:var(--font-mono);
+  font-size:18px;
+  font-weight:500;
+  letter-spacing:1px;
+  margin:0;
+}
+
+@media (min-width:600px){
+  .screen{ padding-top:var(--space-5); }
+}
