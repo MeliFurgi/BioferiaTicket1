@@ -134,8 +134,32 @@ body {
 /* pantallas grandes */
 @media (min-width: 900px) {
   .page {
-    max-width: 680px;
-    padding: 20px 20px 56px;
+    max-width: 1000px;
+    padding: 30px 40px 60px;
+  }
+
+  .head {
+    margin-bottom: 40px;
+  }
+
+  .head h1 {
+    font-size: 48px;
+  }
+
+  .year {
+    font-size: 28px;
+  }
+
+  .ticket-card {
+    padding: 35px 35px 18px;
+  }
+
+  .section-title {
+    margin-top: 45px;
+  }
+
+  .info-card {
+    padding: 35px;
   }
 }
 /* celulares */
