@@ -30,8 +30,8 @@ body {
 
 /* cabecera */
 .head { text-align: center; margin-bottom: 36px; }
-.head h1 { font-size: clamp(2rem, 6vw, 2.5rem); font-weight: 700; letter-spacing: .01em; line-height: 1; }
-.year { font-size: 1.5rem; color: #666; margin-top: 6px; }
+.head h1 { font-size: clamp(2rem, 6vw, 32px); font-weight: 700; letter-spacing: .01em; line-height: 1; }
+.year { font-size: 26px; color: #666; margin-top: 6px; }
 
 /* ticket */
 .ticket-card {
@@ -57,7 +57,7 @@ body {
 /* título de sección */
 .section-title {
   text-align: center;
-  font-size: .85rem; font-weight: 700; letter-spacing: .14em;
+  font-size: 25px; font-weight: 700; letter-spacing: .14em;
   margin: 44px 0 18px;
 }
 
@@ -82,10 +82,10 @@ body {
 }
 .label {
   display: block;
-  font-size: .62rem; font-weight: 700; letter-spacing: .08em;
+  font-size: 15px; font-weight: 700; letter-spacing: .08em;
   color: var(--muted); margin-bottom: 2px;
 }
-.info-list strong { font-family: var(--mono); font-size: .95rem; font-weight: 700; line-height: 1.35; display: block; }
+.info-list strong { font-family: var(--mono); font-size: 16px; font-weight: 700; line-height: 1.35; display: block; }
 
 .valid {
   width: min(100%, 320px);
@@ -94,12 +94,12 @@ body {
   background: var(--ok-bg); color: var(--ok-ink);
   border-radius: 999px;
   padding: 14px;
-  font-size: .8rem; font-weight: 700; letter-spacing: .06em;
+  font-size: 20px; font-weight: 700; letter-spacing: .06em;
 }
 .valid svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
 .code { text-align: center; margin-top: 26px; }
-.code strong { font-family: var(--mono); font-size: 1.15rem; font-weight: 400; letter-spacing: .06em; }
+.code strong { font-family: var(--mono); font-size: 18px; font-weight: 400; letter-spacing: .06em; }
 
 /* ventana del QR */
 .modal {
