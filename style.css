@@ -30,8 +30,17 @@ body {
 
 /* cabecera */
 .head { text-align: center; margin-bottom: 36px; }
-.head h1 { font-size: clamp(2rem, 6vw, 32px); font-weight: 700; letter-spacing: .01em; line-height: 1; }
-.year { font-size: 26px; color: #666; margin-top: 6px; }
+.head h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  line-height: 1;
+}
+.year {
+  font-size: 28px;
+  color: #666;
+  margin-top: 6px;
+}
 
 /* ticket */
 .ticket-card {
@@ -52,12 +61,18 @@ body {
 .ticket-btn:focus-visible { outline: 3px solid #6a4cff; outline-offset: 6px; }
 .ticket { display: block; width: 100%; height: auto; filter: drop-shadow(0 3px 5px rgba(0,0,0,.18)); }
 
-.hint { font-size: .72rem; color: var(--muted); margin: 18px 0 8px; }
+.hint {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 18px 0 8px;
+}
 
 /* título de sección */
 .section-title {
   text-align: center;
-  font-size: 25px; font-weight: 700; letter-spacing: .14em;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .14em;
   margin: 44px 0 18px;
 }
 
@@ -82,24 +97,44 @@ body {
 }
 .label {
   display: block;
-  font-size: 15px; font-weight: 700; letter-spacing: .08em;
-  color: var(--muted); margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin-bottom: 2px;
 }
-.info-list strong { font-family: var(--mono); font-size: 16px; font-weight: 700; line-height: 1.35; display: block; }
+.info-list strong {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  display: block;
+}
 
 .valid {
   width: min(100%, 320px);
   margin: 26px auto 0;
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  background: var(--ok-bg); color: var(--ok-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--ok-bg);
+  color: var(--ok-ink);
   border-radius: 999px;
   padding: 14px;
-  font-size: 20px; font-weight: 700; letter-spacing: .06em;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: .06em;
 }
 .valid svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 
 .code { text-align: center; margin-top: 26px; }
-.code strong { font-family: var(--mono); font-size: 18px; font-weight: 400; letter-spacing: .06em; }
+.code strong {
+  font-family: var(--mono);
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: .06em;
+}
 
 /* ventana del QR */
 .modal {
@@ -124,10 +159,15 @@ body {
 .qr-code { font-family: var(--mono); margin-top: 14px; letter-spacing: .06em; }
 .qr-note { font-size: .72rem; color: var(--muted); margin-top: 4px; }
 .close {
-  margin-top: 18px; width: 100%;
-  background: #111; color: #fff; border: 0; cursor: pointer;
-  border-radius: 999px; padding: 12px;
-  font: 700 .85rem var(--font);
+  margin-top: 18px;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 12px;
+  font: 700 18px var(--font);
 }
 .close:focus-visible { outline: 3px solid #6a4cff; outline-offset: 3px; }
 
@@ -139,21 +179,19 @@ body {
     padding: 55px 40px 70px;
   }
 
-  /* Título */
   .head {
     margin-bottom: 48px;
   }
 
   .head h1 {
-    font-size: 56px;
+    font-size: 60px;
   }
 
   .year {
-    font-size: 32px;
+    font-size: 36px;
     margin-top: 8px;
   }
 
-  /* Ticket */
   .ticket-card {
     width: 850px;
     margin: 0 auto;
@@ -162,17 +200,15 @@ body {
   }
 
   .hint {
-    font-size: .85rem;
+    font-size: 18px;
     margin-top: 20px;
   }
 
-  /* Título de sección */
   .section-title {
-    font-size: 1rem;
+    font-size: 20px;
     margin: 52px 0 24px;
   }
 
-  /* Información */
   .info-card {
     width: 850px;
     margin: 0 auto;
@@ -192,18 +228,18 @@ body {
   }
 
   .label {
-    font-size: .7rem;
+    font-size: 16px;
   }
 
   .info-list strong {
-    font-size: 1.05rem;
+    font-size: 21px;
   }
 
   .valid {
     width: 500px;
     margin-top: 30px;
     padding: 16px;
-    font-size: .9rem;
+    font-size: 19px;
   }
 
   .code {
@@ -211,7 +247,7 @@ body {
   }
 
   .code strong {
-    font-size: 1.3rem;
+    font-size: 25px;
   }
 }
 /* celulares */
