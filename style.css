@@ -133,11 +133,11 @@ body {
 
 /* pantallas grandes */
 @media (min-width: 900px) {
-  .page { max-width: 680px; padding-top: 48px; }
-  .blob-tl { width: 480px; height: 420px; }
-  .blob-br { width: 420px; height: 360px; }
+  .page {
+    max-width: 680px;
+    padding: 20px 20px 56px;
+  }
 }
-
 /* celulares */
 @media (max-width: 480px) {
   .page { padding: 28px 14px 44px; }
